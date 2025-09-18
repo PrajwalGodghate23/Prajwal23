@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCTION TO HTML</title>
+</head>
+<body>
+    
+    <h1>Introduction To HTML</h1>
+    <hr>
+    <h2>What is HTML?</h2>
+    <p>HTML stands for HyperText Markup Language. It is the standard language used to create and structure the content of a webpage.</p>
+
+     <ul>
+        <li><b>HyperText:</b>This refers to the ability to create links that connect web pages to one another, making the web a connected "web" of information.</li>
+     <li><b>Markup Language:</b>This means you use "tags" to surround your content, giving that content meaning and structure. You are "marking up" a plain text document.</li>
+    </ul>
+    <h2>Creating Your First Webpage</h2>
+    <p>To create a simple webpage, you can use any text editor (like Notepad on Windows or TextEdit on Mac) and save the file with a .html extension. Here's a basic example of an HTML document:</p>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Webpage&lt;/h1&gt;
+    &lt;p&gt;This is a simple HTML document created using a text editor.&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Uses basic tags like &lt;h1&gt;, &lt;p&gt;, and &lt;ul&gt;&lt;/li&gt;
+        &lt;li&gt;No CSS or JavaScript—just pure HTML&lt;/li&gt;
+        &lt;li&gt;Great for learning structure and semantics&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    <p>Save this code in a file named <b>index.html</b> and open it in your web browser to see your first webpage!</p>
+    <h2>Basic HTML Tags</h2>
+    <ul>
+        <li><b>&lt;!DOCTYPE html&gt;:</b> Declares the document type and version of HTML.</li>
+        <li><b>&lt;html&gt;:</b> The root element that wraps all the content on the page.</li>
+        <li><b>&lt;head&gt;:</b> Contains meta-information about the document, like its title and links to stylesheets.</li>
+        <li><b>&lt;title&gt;:</b> Sets the title of the webpage, which appears in the browser tab.</li>
+        <li><b>&lt;body&gt;:</b> Contains the main content of the webpage that users see.</li>
+        <li><b>&lt;h1&gt; to &lt;h6&gt;:</b> Heading tags used to create headings and subheadings. &lt;h1&gt; is the highest level, and &lt;h6&gt; is the lowest.</li>
+        <li><b>&lt;p&gt;:</b> Defines a paragraph of text.</li>
+        <li><b>&lt;a href="URL"&gt;:</b> Creates a hyperlink to another webpage or resource.</li>
+        <li><b>&lt;img src="image.jpg" alt="description"&gt;:</b> Embeds an image in the webpage. The alt attribute provides alternative text for screen readers.</li>
+        <li><b>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;:</b> Used to create unordered (bulleted) and ordered (numbered) lists. &lt;li&gt; defines each list item.</li>
+    </ul>
+<hr>
+<h2>What is heading?</h2>
+<p>Headings are used to create titles and subtitles on a webpage. They help organize content and make it easier for users to read and navigate. HTML provides six levels of headings, from &lt;h1&gt; to &lt;h6&gt;, with &lt;h1&gt; being the most important and typically used for main titles, while &lt;h6&gt; is the least important and used for sub-subtitles.</p>
+<p>Example of headings:</p>
+<pre><code>
+    &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;This is a Heading 1&lt;/h1&gt;
+&lt;h2&gt;This is a Heading 2&lt;/h2&gt;
+&lt;h3&gt;This is a Heading 3&lt;/h3&gt;
+&lt;h4&gt;This is a Heading 4&lt;/h4&gt;
+&lt;h5&gt;This is a Heading 5&lt;/h5&gt;
+&lt;h6&gt;This is a Heading 6&lt;/h6&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>output.</p>
+
+<h1>This is a Heading 1</h1>
+<h2>This is a Heading 2</h2>
+<h3>This is a Heading 3</h3>
+<h4>This is a Heading 4</h4>
+<h5>This is a Heading 5</h5>
+<h6>This is a Heading 6</h6>
+<hr>
+<h2>What is paragraph?</h2>
+<p>A paragraph in HTML is defined using the &lt;p&gt; tag. It is used to group sentences and provide structure to the text content on a webpage. Paragraphs help improve readability by breaking up large blocks of text into smaller, manageable sections.</p>
+<p>Example of a paragraph:</p>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;This is a simple paragraph of text on my webpage. It provides information and
+helps organize content for better readability.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>output.</p>
+
+<p>This is a simple paragraph of text on my webpage. It provides information and helps organize content for better readability.</p>
+<hr>
+<h2>What is hyperlink?</h2>
+<p>A hyperlink, commonly referred to as a link, is an element in HTML that allows users to navigate from one webpage to another or to different sections within the same page. Hyperlinks are created using the &lt;a&gt; (anchor) tag, which includes an href attribute that specifies the destination URL of the link.</p>
+<p>Example of a hyperlink:</p>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;a href="https://www.example.com"&gt;Click here to visit Example.com&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>output.</p>
+<a href="https://www.example.com">Click here to visit Example.com</a>
+<hr>
+<h2>What is an Element?</h2>
+<p>An element in HTML is a fundamental building block of a webpage. It consists of a start tag, content, and an end tag. Elements are used to structure and format the content on a webpage, defining how different parts of the content should be displayed and organized.</p>
+<p>Example of an HTML element:</p>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;This is a Heading&lt;/h1&gt; &lt;
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>output</p>
+<h1>This is a Heading</h1>
+<p>This is a paragraph of text.</p>
+<hr>
+<h2>What is Attribute?</h2>
+<p>Attributes in HTML provide additional information about an element and are included within the start tag.
+    They consist of a name and a value, separated by an equals sign. Attributes help define the behavior, appearance, or functionality of an element.</p>
+<p>Example of an HTML element with attributes:</p>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example.com&lt;/a&gt;
+&lt;img src="assets/mern.png" alt="A descriptive text"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>output</p>
+<a href="https://www.example.com" target="_blank">Visit Example.com</a>
+<img src="assets/mern.png" alt="A descriptive text">
+<hr>
+<h2>What is an Image?</h2>
+<p>An image in HTML is embedded using the &lt;img&gt; tag, which is a self-closing tag that does not require an end tag. The &lt;img&gt; tag includes attributes such as src (source) and alt (alternative text) to specify the image file's location and provide descriptive text for accessibility.</p>
+<p>Example of embedding an image in HTML:</p>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;img src="assets/mern.png" alt="A descriptive text"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>output</p>
+<img src="assets/mern.png" alt="A descriptive text">
+<hr>
+<h2>What is List?</h2>
+<p>A list in HTML is a way to organize and present related items in a structured format. HTML provides two main types of lists: unordered lists and ordered lists. Unordered lists are used for items that do not have a specific order, while ordered lists are used for items that follow a sequence or ranking.</p>
+<p>Example of an unordered list:</p>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;My Favorite Fruits&lt;/h2&gt;
+&lt;ul&gt;
+    &lt;li&gt;Apple&lt;/li&gt;
+    &lt;li&gt;Banana&lt;/li&gt;
+    &lt;li&gt;Cherry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>output</p>
+<h2>My Favorite Fruits</h2>
+<ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+</ul>
+<p>Example of ordered lists:</p>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;My Favorite Fruits&lt;/h2&gt;
+&lt;ol&gt;
+    &lt;li&gt;Apple&lt;/li&gt;
+    &lt;li&gt;Banana&lt;/li&gt;
+    &lt;li&gt;Cherry&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>output</p>
+<h2>My Favorite Fruits</h2>
+<ol>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+</ol>
+<hr>
+<footer>
+    <a href="welcome page.html">Home</a>
+    <button>
+        <a href="part2.html">Next Page</a>
+     
+    </button>
+    <button>
+           <a href="part5.html">Last Page</a>
+    </button>
+</footer>
+</body>
+</html>

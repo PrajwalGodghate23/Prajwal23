@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLES
+    </title>
+</head>
+<body>
+    <H1><center>Nested Lists & Tables</center></H1>
+    <hr>
+    <h2>Nested lists :</h2>
+    <p>A nested list in HTML is a list that contains other lists within its list items, creating a hierarchical structure. This allows for organizing information into categories and subcategories, providing a clear visual representation of relationships between items. 
+<h3>Creating Nested Lists:</h3>
+
+<pre><code>
+&lt;ul&gt;
+  &lt;li&gt;India
+    &lt;ul&gt;
+      &lt;li&gt;Nagpur&lt;/li&gt;
+      &lt;li&gt;Mumbai&lt;/li&gt;
+      &lt;li&gt;Delhi&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;USA
+    &lt;ul&gt;
+      &lt;li&gt;New York&lt;/li&gt;
+      &lt;li&gt;Los Angeles&lt;/li&gt;
+      &lt;li&gt;Chicago&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Japan
+    &lt;ul&gt;
+      &lt;li&gt;Tokyo&lt;/li&gt;
+      &lt;li&gt;Osaka&lt;/li&gt;
+      &lt;li&gt;Kyoto&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>output:</p>
+<ul>
+  <li>India
+    <ul>
+      <li>Nagpur</li>
+      <li>Mumbai</li>
+      <li>Delhi</li>
+    </ul>
+  </li>
+  <li>USA
+    <ul>
+      <li>New York</li>
+      <li>Los Angeles</li>
+      <li>Chicago</li>
+    </ul>
+  </li>
+  <li>Japan
+    <ul>
+      <li>Tokyo</li>
+      <li>Osaka</li>
+      <li>Kyoto</li>
+    </ul>
+  </li>
+  <hr>
+<h2>Tables in Html:</h2>
+<p>HTML tables are used to display data in a structured, tabular format, arranged in rows and columns. They are ideal for presenting data where a clear relationship exists between the cells, such as product lists with prices, employee records with salaries, or flight information.</p>
+<h4>Here are the key elements for creating HTML tables:
+&lt;table&gt;
+</h4>
+<p>Here are the key elements for creating HTML tables:
+&lt;table&gt;: This tag defines the entire table and acts as its container.
+&lt;tr&gt;: This tag defines a table row. Each &lt;tr&gt; element represents a new row within the table.
+&lt;th&gt;: This tag defines a table header cell. &lt;th&gt; elements are typically used within the first &lt;tr&gt; to label the columns and are usually rendered in bold by default.
+&lt;td&gt;: This tag defines a standard table data cell. &lt;td&gt; elements contain the actual data within each row.
+</p>
+<h4>example</h4>
+<pre><code>
+&lt;!-- index.html --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" 
+          content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Firstname&lt;/th&gt;
+            &lt;th&gt;Lastname&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Priya&lt;/td&gt;
+            &lt;td&gt;Sharma&lt;/td&gt;
+            &lt;td&gt;24&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Arun&lt;/td&gt;
+            &lt;td&gt;Singh&lt;/td&gt;
+            &lt;td&gt;32&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Sam&lt;/td&gt;
+            &lt;td&gt;Watson&lt;/td&gt;
+            &lt;td&gt;41&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>output:</p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+</body>
+</html>
+<hr>
+
+<button>
+    <a href="welcome page.html">HOME</a>
+</button>
+<button>
+    <a href="part1.html">Previous Page</a>
+
+</button>
+<button>
+  <a href="part3.html">Next Page</a>
+</button>
+<button>
+    <a href="part5.html">Last Page</a>
+</button>
+</body>
+</html>

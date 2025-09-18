@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part4</title>
+</head>
+<body>
+    <h1><center>FORMS in HTML</center></h1>
+        <hr>
+        <h2>FORMS:</h2>
+        <p>HTML forms, defined using the <form> Tags are essential for collecting user input on web pages. They incorporate a variety of interactive controls such as text fields, numeric inputs, email fields, password fields, checkboxes, radio buttons, and submit buttons. Over 85% of websites rely on forms to gather data from users, making them a fundamental component of modern web development.</p>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Basic HTML Form&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Contact Form&lt;/h2&gt;
+    &lt;form action="submit.html" method="post"&gt;
+        &lt;label for="name"&gt;Name:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;input type="submit" value="Submit"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h4>OUTPUT:</h4>
+ <h2>Contact Form</h2>
+    <form action="submit.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <h2>Radio Buttons & Checkboxes</h2>
+    <p>Radio buttons and checkboxes are HTML input elements used to gather user selections in forms. The key difference is that radio buttons allow a user to make only a single choice from a group, while checkboxes permit multiple selections.</p>
+    <h4>Example</h4>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Radio and Checkbox Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Choose Your Gender&lt;/h2&gt;
+    &lt;form&gt;
+        &lt;input type="radio" id="male" name="gender" value="male"&gt;
+        &lt;label for="male"&gt;Male&lt;/label&gt;&lt;br&gt;
+
+        &lt;input type="radio" id="female" name="gender" value="female"&gt;
+        &lt;label for="female"&gt;Female&lt;/label&gt;&lt;br&gt;
+
+        &lt;input type="radio" id="other" name="gender" value="other"&gt;
+        &lt;label for="other"&gt;Other&lt;/label&gt;
+    &lt;/form&gt;
+
+    &lt;h2&gt;Select Your Hobbies&lt;/h2&gt;
+    &lt;form&gt;
+        &lt;input type="checkbox" id="reading" name="hobby" value="reading"&gt;
+        &lt;label for="reading"&gt;Reading&lt;/label&gt;&lt;br&gt;
+
+        &lt;input type="checkbox" id="gaming" name="hobby" value="gaming"&gt;
+        &lt;label for="gaming"&gt;Gaming&lt;/label&gt;&lt;br&gt;
+
+        &lt;input type="checkbox" id="traveling" name="hobby" value="traveling"&gt;
+        &lt;label for="traveling"&gt;Traveling&lt;/label&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4>output:</h4>
+ <h2>Choose Your Gender</h2>
+    <form>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+    </form>
+
+    <h2>Select Your Hobbies</h2>
+    <form>
+        <input type="checkbox" id="reading" name="hobby" value="reading">
+        <label for="reading">Reading</label><br>
+
+        <input type="checkbox" id="gaming" name="hobby" value="gaming">
+        <label for="gaming">Gaming</label><br>
+
+        <input type="checkbox" id="traveling" name="hobby" value="traveling">
+        <label for="traveling">Traveling</label>
+    </form>
+<br>
+<hr>
+<h2>Place holder attribute:</h2>
+<p>The placeholder attribute specifies a short hint that describes the expected value of an input field (e.g. a sample value or a short description of the expected format).</p>
+<h4>example</h4>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Placeholder Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Login Form&lt;/h2&gt;
+    &lt;form&gt;
+        &lt;input type="text" placeholder="Enter your username"&gt;&lt;br&gt;&lt;br&gt;
+        &lt;input type="password" placeholder="Enter your password"&gt;&lt;br&gt;&lt;br&gt;
+        &lt;input type="submit" value="Login"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4>output:</h4>
+<h2>Login Form</h2>
+    <form>
+        <input type="text" placeholder="Enter your username"><br><br>
+        <input type="password" placeholder="Enter your password"><br><br>
+        <input type="submit" value="Login">
+    </form>
+<br>
+<hr>
+<h3>SIGN UP FORM</h3>
+<h2>User Registration</h2>
+    <form action="submit.html" method="post">
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Choose a username" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Create a password" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="hobbies">Hobbies:</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+        <label for="gaming">Gaming</label>
+        <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+        <label for="traveling">Traveling</label><br><br>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="japan">Japan</option>
+        </select><br><br>
+
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us about yourself"></textarea><br><br>
+
+        <input type="submit" value="Sign Up">
+
+    </form>
+<BR>
+    <hr>  
+    <br>
+    <button>
+        <a href="welcome page.html">HOME</a>
+    </button>
+    <button>
+        <a href="part3.html">Previous Page</a>
+    </button>
+    <button>
+        <a href="part5.html">last Page</a>
+    </button>
+</body>
+</html>

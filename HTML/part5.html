@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part 5:HTML Media</title>
+</head>
+<body>
+    <h1>Html MEDIA Page & Common Entities</h1>
+    <hr>
+    <h2><u>Media Tag:-</u></h2>
+ <p>The HTML <b>&lt;audio&gt;</b> and <b>&lt;video&gt;</b> tags are used to embed audio and video content in a web page, respectively. These tags provide a way to include multimedia elements directly within the HTML document, allowing users to play audio and video files without needing external plugins.</p>
+<h3><u>audio tag:</u></h3>
+<p>The <b>&lt;audio&gt;</b> tag is used to embed sound content in a web page. It supports various audio formats, including MP3, WAV, and OGG. The <b>&lt;audio&gt;</b> tag can include attributes such as controls, autoplay, loop, and muted to control the playback behavior.</p>
+<p>Example:</p>
+<p><b>audio tag code:</b></p>
+<pre><code>
+&lt;audio controls&gt;
+  &lt;source src="audiofile.mp3" type="audio/mpeg"&gt;
+  &lt;source src="audiofile.ogg" type="audio/ogg"&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;
+</code></pre>
+<p>Output:</p>
+<audio controls>
+  <source src="audiofile.mp3" type="audio/mpeg">
+  <source src="audiofile.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+<p>Another Example:</p>
+<p><b>audio tag code:</b></p>
+<pre><code>
+&lt;audio controls&gt;
+  &lt;source src="wavy.mp3" type="audio/mpeg"&gt;
+ &lt;/audio&gt; 
+</code></pre>
+<p>Output:</p>  
+<audio controls>
+  <source src="assets/wavy.mp3" type="audio/mpeg">
+</audio>
+<hr>
+<br>
+<h3><u>video tag:</u></h3>
+<p>The <b>&lt;video&gt;</b> tag is used to embed video content in a web page. It supports various video formats, including MP4, WebM, and OGG. Similar to the <b>&lt;audio&gt;</b> tag, the <b>&lt;video&gt;</b> tag can include attributes such as controls, autoplay, loop, width, height, and poster to control the playback behavior and appearance.</p>
+<p>Example:</p>
+<p><b>video tag code:</b></p>
+<pre><code>
+&lt;video width="320" height="240" controls&gt;
+  &lt;source src="videofile.mp4" type="video/mp4"&gt;
+  &lt;source src="videofile.webm" type="video/webm"&gt;
+  Your browser does not support the video element.
+&lt;/video&gt;
+</code></pre>
+<p>Output:</p>
+<video width="320" height="240" controls>
+  <source src="videofile.mp4" type="video/mp4">
+  <source src="videofile.webm" type="video/webm">
+  Your browser does not support the video element.
+</video>
+<h3>EMBEDDED VIDEO</h3>
+<p>You can also embed videos from platforms like YouTube using the <b>&lt;iframe&gt;</b> tag. This allows you to display videos hosted on external sites directly within your web page.</p>
+<h3>iframes:</h3>
+<p>The <b>&lt;iframe&gt;</b> tag is used to embed another HTML document within the current document. It creates an inline frame that can display content from another source, such as a different webpage or a video from platforms like YouTube or Vimeo.</p>
+<p>Example:</p>
+<p><b>Embedded video code:</b></p>
+<pre><code>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/vsWxs1tuwDk" title="YouTube video player" &gt;&lt;/iframe&gt;
+</code></pre>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vsWxs1tuwDk" title="YouTube video player" ></iframe>
+<hr>
+<br>
+<h2>Common Symbol Entities</h2>
+<p>HTML entities are special codes that represent characters in HTML. They are used to display characters that have a special meaning in HTML, such as <, >, &, and ". Here are some common HTML symbol entities:</p>
+<table border="1">
+    <tr>
+        <th>Symbol</th>
+        <th>Description</th>
+        <th>Entity Name</th>
+        <th>Entity Number</th>
+    </tr>
+    <tr>
+        <td>&lt;</td>
+         <td>Less-than</td>       
+        <td>&amp;lt;</td>
+        <td>&amp;#60;</td>
+    </tr>
+    <tr>
+        <td>&gt;</td>
+        <td>Greater-than</td>
+        <td>&amp;gt;</td>
+        <td>&amp;#62;</td>
+    </tr>
+    <tr>
+        <td>&amp;</td>
+        <td>Ampersand</td>
+        <td>&amp;amp;</td>
+        <td>&amp;#38;</td>
+    </tr>
+    <tr>
+        <td>"</td>
+        <td>Double quote</td>
+        <td>&amp;quot;</td>
+        <td>&amp;#34;</td>
+    </tr>
+    <tr>
+        <td>'</td>
+        <td>Single quote</td>
+        <td>&amp;apos;</td>
+        <td>&amp;#39;</td>
+    </tr>
+    <tr>
+        <td>©</td>
+        <td>Copyright</td>
+        <td>&amp;copy;</td>
+        <td>&amp;#169;</td>
+    </tr>
+    <tr>
+        <td>®</td>
+        <td>Registered</td>
+        <td>&amp;reg;</td>
+        <td>&amp;#174;</td>
+    </tr>
+    <tr>
+        <td>™</td>
+        <td>Trademark</td>
+        <td>&amp;trade;</td>
+        <td>&amp;#8482;</td>
+    </tr>
+    <tr>
+        <td>€</td>
+        <td>Euro</td>
+        <td>&amp;euro;</td>
+        <td>&amp;#8364;</td>
+    </tr>
+    <tr>
+        <td>£</td>
+        <td>Pound Sterling</td>
+        <td>&amp;pound;</td>
+        <td>&amp;#163;</td>
+    </tr>
+</table>
+<hr>
+<br>
+<h3><u>Multi-page Websites:-</u></h3>
+<p>A multi-page website is a website that consists of multiple interconnected web pages, each with its own unique URL. These pages are typically linked together through a navigation menu or hyperlinks, allowing users to easily navigate between different sections or topics within the website.</p>
+<p>Multi-page websites are commonly used for larger websites that require more content and organization, such as e-commerce sites, blogs, or educational portals.</p>
+<p>Example:</p>
+<p><b>Multi-page website code:</b></p>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+ &lt;meta charset="UTF-8"&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+ &lt;title&gt;Home Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+ &lt;nav&gt;
+&lt;ul&gt;
+ &lt;li&gt;&lt;a href="part 1.html"&gt;Introduction to HTML&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="intro-webdev.html"&gt;Introduction to Web Development&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ &lt;/nav&gt;
+ &lt;p&gt;This is the home page of my multi-page website.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+ </code></pre>
+<p>Output:</p>
+<ul>
+    <li><a href="part1.html">Introduction to HTML</a></li>
+    <li><a href="intro-webdev.html">Introduction to Web Development</a></li>
+<hr>
+
+<h2><u>footer:</u></h2>
+<p>The <b>&lt;footer&gt;</b> tag is used to define the footer section of a web page or a specific section within the page. It typically contains information such as copyright notices, contact details, social media links, and other relevant information that is usually found at the bottom of a webpage.</p>
+<p>Example:</p>
+<p><b>footer code:</b></p>
+<pre><code>
+&lt;footer&gt;
+    &lt;p&gt;Follow us:&lt;/p&gt;
+    &lt;a href="#"&gt;Facebook&lt;/a&gt; | 
+    &lt;a href="#"&gt;Twitter&lt;/a&gt; | 
+    &lt;a href="#"&gt;Instagram&lt;/a&gt;
+    &lt;p&gt;&amp;copy; 2025 All rights reserved&lt;/p&gt;
+&lt;/footer&gt;
+</code></pre>
+
+<p>Output:</p>
+<footer>
+    <p>Follow us:</p>
+    <a href="https://www.facebook.com/">Facebook</a> | 
+    <a href="https://x.com/i/flow/login">Twitter</a> | 
+    <a href="https://www.instagram.com/">Instagram</a>
+    <p>&copy; 2025 All rights reserved</p>
+</footer>
+
+<hr>
+
+<button>
+
+    <a href="welcome page.html">Back to Home</a>
+</button>
+
+</body>
+</html>

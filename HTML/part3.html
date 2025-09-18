@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><center>HTML file Path & Boilerplate code</center></h1>
+    <hr>
+<h2>File path in HTML:</h2> 
+<P>HTML file paths specify the location of files or resources that a webpage needs to access, such as images, videos, scripts, or other HTML documents. These paths tell the web browser where to find the files required to display the content correctly or to execute scripts as intended.
+<BR>
+To insert a file in a web page, its source must be known. For example, the syntax &Lt;img src=" " alt=" "> is used to insert an image file, where the path of the file is mentioned in the source (src).</P>
+        <h3>Types of File Paths:</h3>
+        <p>There are two main types of HTML File Paths:</p>
+        <ol>
+            <li>Absolute Path</li>
+            <li>Relative Path</li>
+        </ol>
+        <h3>1.Absolute Path:</h3>
+        <p>Point directly to a resource's location on the internet and include the full URL, which consists of the protocol (http:// or https://), domain, and path to the resource.<br>Best for resources that are hosted externally. The browser knows exactly where to find them regardless of the current document’s location.</p>
+        <p>example</p>
+
+   <pre><code>
+&lt;img src="https://media.geeksforgeeks.org/wp-content/uploads/geek.png" 
+     alt="My Image" 
+     style="width: 400px" /&gt;
+</code></pre>
+  <p>output:</p>  
+    <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/geek.png" 
+         alt="My Image" 
+         style="width: 400px" />
+         <h3>2.Relative Path</h3>
+         <p>Specify the path to a resource in relation to the location of the HTML file currently being viewed.<br>Ideal for resources within the same website. Keeps your HTML portable if the domain changes since the path doesn’t need to be updated.</p>
+<p>Example:</p>
+<pre><code>
+&lt;h2&gt;File present in the same folder&lt;/h2&gt;
+&lt;img src="assets/full.jpeg" 
+     alt="My Image" 
+     style="width:400px"&gt;
+</code></pre>
+         <p>output</p>
+<h2>File present in the same folder</h2>
+    <img src="assets/full.jpeg" 
+         alt="My Image" 
+         style="width:400px">
+         <hr>
+<h2>What is and Why we use BIOLERPLATE Code in html</h2>
+<p>HTML boilerplate code refers to the minimal, essential structure required for any valid HTML document. It is a pre-written template that includes fundamental elements and declarations, providing a starting point for web development projects.</p>
+<table border="1" >
+  <thead>
+    <tr>
+      <th>Tag</th>
+      <th>Purpose</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt;!DOCTYPE html&gt;</td>
+      <td>Document declaration</td>
+      <td>Declares the document type and version of HTML (HTML5).</td>
+    </tr>
+    <tr>
+      <td>&lt;html lang="en"&gt;</td>
+      <td>Root element</td>
+      <td>Wraps all content and specifies the document language.</td>
+    </tr>
+    <tr>
+      <td>&lt;head&gt;</td>
+      <td>Metadata container</td>
+      <td>Holds non-visible info like encoding, title, and links.</td>
+    </tr>
+    <tr>
+      <td>&lt;meta charset="UTF-8"&gt;</td>
+      <td>Character encoding</td>
+      <td>Ensures support for a wide range of characters.</td>
+    </tr>
+    <tr>
+      <td>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</td>
+      <td>Responsive design</td>
+      <td>Configures the viewport for mobile-friendly layout.</td>
+    </tr>
+    <tr>
+      <td>&lt;title&gt;Document Title&lt;/title&gt;</td>
+      <td>Page title</td>
+      <td>Sets the title shown in the browser tab.</td>
+    </tr>
+    <tr>
+      <td>&lt;link rel="stylesheet" href="style.css"&gt;</td>
+      <td>External CSS</td>
+      <td>Links to a stylesheet for styling the page.</td>
+    </tr>
+    <tr>
+      <td>&lt;body&gt;</td>
+      <td>Visible content</td>
+      <td>Contains everything the user sees on the page.</td>
+    </tr>
+    <tr>
+      <td>&lt;script src="script.js"&gt;&lt;/script&gt;</td>
+      <td>External JavaScript</td>
+      <td>Links to a JS file for interactivity and dynamic behavior.</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h2>Div Tag</h2>
+<p>The &lt;div> tag, used in over 90% of web pages, divides content into sections and serves as a flexible container for text, images, and links. Easily styled with CSS and customized using classes or IDs, it often uses percentage-based widths like 50% or 33.33% for responsive layouts, making it key to web page structure.</p>
+    <ul>
+        <li><b>Block-Level Element:</b>The &lt;div tag is a block-level element, meaning it takes up the full width and starts on a new line.</li>
+    <li><b>Styling with CSS:</b>  It can be styled using CSS, allowing customization like width, background color, padding, and margins.</li>
+    <li><b>Inline-Block Option:</b>By using display: inline-block, a <div> can behave like an inline element while retaining block-level features.</li>
+        <li><b>Used for Layouts:</b>&lt;div> is often used in layouts with Flexbox or Grid to organize content and arrange sections of a webpage.</li>
+        </ul>
+        <hr>
+        <h2>Class & ID in HTML:</h2>
+        <p>In HTML, id and class are attributes used to identify and group elements, primarily for styling with CSS and manipulating with JavaScript</p>
+        <ul>
+            <li><b>ID Attribute:</b>
+            <p>Uniqueness: An id attribute is designed to uniquely identify a single element within an entire HTML document. No two elements on the same page should have the same id.</p>
+        <p>Purpose: It is used when you need to target a very specific element for styling or scripting, such as a unique header, a navigation menu, or a specific form input.</p>
+    <p>CSS Selector: In CSS, an id is selected using the hash symbol (#) followed by the id value, for example:</p>
+JavaScript: In JavaScript, you can access an element by its id using document.getElementById()</li>
+<li><b>Class Attribute:</b>
+<p>Non-uniqueness: A class attribute can be applied to multiple HTML elements across a document.</p>
+Purpose: It is used to group elements that share common characteristics or require similar styling or behavior.For instance, you might have a class="city" to apply the same styling to multiple city names.
+</p>Multiple Classes: An element can have multiple classes assigned to it, separated by spaces, for example: &lt;p class="intro highlight">.
+CSS Selector: In CSS, a class is selected using a period (.) followed by the class name, </p>
+JavaScript: In JavaScript, you can access elements by their class name using document.getElementsByClassName().
+</li>
+</ul>
+<hr>
+<h4>Example of DIV TAG , CLASS & ID</h4>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Div Class and ID Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="header"&gt;
+        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;/div&gt;
+
+    &lt;div class="content"&gt;
+        &lt;p&gt;This is the main content area.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="content"&gt;
+        &lt;p&gt;Here is another section with the same class.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div id="footer"&gt;
+        &lt;p&gt;Footer information goes here.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<H5>OUTPUT:</H5>
+    <div id="header">
+        <h1>Welcome to My Website</h1>
+    </div>
+
+    <div class="content">
+        <p>This is the main content area.</p>
+    </div>
+
+    <div class="content">
+        <p>Here is another section with the same class.</p>
+    </div>
+
+    <div id="footer">
+        <p>Footer information goes here.</p>
+    </div>
+<hr>
+<button>
+    <a href="welcome page.html">HOME</a>
+</button>
+<button>
+    <a href="part2.html">Previous Page</a>
+</button>
+<button>
+    <a href="part4.html">Next Page</a>
+</button>
+<button>
+    <a href="part5.html">Last Page</a>
+</button>
+</body>
+</html>
